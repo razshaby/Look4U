@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Create_questions_fragment">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:scrollbarSize="10sp"
+        android:fadeScrollbars="false"
+        android:verticalScrollbarPosition="right"
+        android:fillViewport="false"
+        android:layout_weight="93"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/add_new_questions_Button"
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#9F474747"
+                    android:text="@string/add_new_questions"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:layout_margin="20sp"
+                    android:padding="5sp"
+
+                    android:theme="@style/Theme.MaterialComponents"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/select_questions_Button"
+                    android:layout_width="140sp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#9F474747"
+                    android:text="@string/select_questions"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:layout_margin="20sp"
+                    android:padding="5sp"
+
+                    android:theme="@style/Theme.MaterialComponents"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_questions_RelativeLayout"
+                android:background="@drawable/border"
+                android:visibility="gone"
+                >
+
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/questions_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="280sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/chooseQuestionsFromDBTextView"
+                    android:scrollbars="vertical"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/add_new_questions_RelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:background="@drawable/border"
+
+            >
+
+
+                <LinearLayout
+                    android:id="@+id/question_LinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/questionEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/questionEditText"
+                        android:layout_weight="9"
+                        />
+                    <ImageView
+
+                        android:layout_margin="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/help"
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:src="@drawable/help"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+
+<!--                credit https://stackoverflow.com/questions/33787491/what-is-causing-tablelayout-contents-to-disappear-->
+                <com.razchen.look4u.ToggleButtonGroupTableLayout
+                    android:id="@+id/toggleButtonGroupTableLayout"
+                    android:layout_below="@+id/question_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TableRow>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp" />
+                        <EditText
+                            android:id="@+id/answerEditText"
+                            android:layout_width="150sp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Type_an_answer"
+
+                            />
+
+
+                    </TableRow>
+
+
+                    <TableRow>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp" />
+                        <EditText
+                            android:layout_width="150sp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/Type_an_answer"
+
+                            />
+
+
+                    </TableRow>
+
+
+                </com.razchen.look4u.ToggleButtonGroupTableLayout>
+
+
+                                    <Button
+                                        android:id="@+id/addAnswerButton"
+                                        android:layout_width="40sp"
+                                        android:layout_height="40sp"
+                                        android:layout_below="@+id/toggleButtonGroupTableLayout"
+                                        android:layout_marginRight="30sp"
+                                        android:background="@drawable/plus"
+
+                                        />
+
+
+
+                                    <Button
+                                        android:id="@+id/addQuestionButton"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20sp"
+                                        android:layout_alignTop="@+id/addAnswerButton"
+                                        android:text="@string/save_question"
+                                        android:background="#FFAA2C"
+                                        android:textSize="20sp"
+                                        android:layout_marginBottom="5sp"
+                                        />
+
+            </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/yourQuestionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="השאלות שנוספו עד כה:"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+
+                >
+            </TextView>
+
+            <ImageView
+
+                android:id="@+id/help_yourQuestion_ImageView"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:src="@drawable/help"
+                android:layout_alignParentLeft="true"
+                />
+    <!--                android:layout_marginLeft="5sp"-->
+
+                <androidx.recyclerview.widget.RecyclerView
+
+    android:id="@+id/new_questions_recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/yourQuestionTextView"
+    android:layout_marginTop="10sp"
+    android:scrollbars="vertical"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fromDB_questions_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/new_questions_recyclerView"
+        android:layout_marginTop="10sp"
+        android:scrollbars="vertical"/>
+
+
+
+</RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="7">
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10sp"
+            android:background="#E68C06"
+            android:text="@string/finish"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+
+            />
+
+        <Button
+            android:id="@+id/back_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_alignParentRight="true"
+            android:background="#E68C06"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5sp"
+            android:textSize="30sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/pathTextView"
+            android:layout_toLeftOf="@+id/back_Button"
+            android:layout_toRightOf="@+id/next_button"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            />
+    </RelativeLayout>
+</LinearLayout>
+</FrameLayout>

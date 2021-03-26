@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayoutID"
+        android:paddingRight="10sp"
+        >
+
+        <TextView
+            android:id="@+id/userName_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Main Title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20sp"/>
+
+        <ImageView
+            android:id="@+id/user_ImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20sp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/userDescription_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Title"
+            android:textColor="#a9a9a9"
+            android:textStyle="bold"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="מלא שאלון"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:id="@+id/fillQuestionnaireButtonn"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/lastMessage_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/linearLayoutID"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20sp"
+        android:text=""
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:textSize="18dp"
+        android:maxLines="1"
+        />
+
+
+        <TextView
+            android:id="@+id/lastMessageTime_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#A98EEB"
+            android:layout_below="@+id/lastMessage_TextView"
+            android:layout_marginTop="10sp"
+            android:textSize="15sp"
+            />
+
+<!--    <Button-->
+<!--        android:id="@+id/candidates_contactButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:background="#F7F8FC"-->
+<!--        android:textColor="#2856EE"-->
+<!--        android:layout_below="@+id/candidates_matchesTextView"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:textSize="15sp"-->
+<!--        android:text="פתח צ'אט"-->
+<!--        />-->
+
+
+
+    />
+
+
+</RelativeLayout>

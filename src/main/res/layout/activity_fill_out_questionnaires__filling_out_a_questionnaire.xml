@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FillOutQuestionnaires_FillingOutAQuestionnaireActivity_RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/sendCandidacy"
+        android:fadeScrollbars="false"
+        android:fillViewport="false"
+        android:paddingBottom="10sp"
+        android:scrollbarSize="20sp"
+        android:verticalScrollbarPosition="right">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/FillOutQuestionnaires_FillingOutAQuestionnaireActivityInside_RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp">
+
+
+            <TextView
+                android:id="@+id/numOfQuestionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:background="#A3FF9800"
+                android:textSize="25sp"
+                android:padding="5sp"
+                android:visibility="gone">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/theQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numOfQuestionTextView"
+                android:textSize="20sp"
+
+                >
+
+            </TextView>
+
+            <!--</LinearLayout>-->
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/theQuestion"
+                android:paddingTop="30sp"
+
+
+                >
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="100sp"
+        android:layout_height="90sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2sp"
+        android:background="#D3D3D3"
+        android:text="@string/Next_question"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/previousQuestionButton"
+        android:layout_width="100sp"
+        android:layout_height="90sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2sp"
+        android:background="#D3D3D3"
+        android:text="@string/Previous_question"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/sendCandidacy"
+        android:layout_width="100sp"
+        android:layout_height="90sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2sp"
+        android:background="#E68C06"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center">
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearPopUpSimilarQuestion"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Select_to_question_to_add_to_questionnaire"
+                android:textSize="27sp"
+                android:textColor="#FFC107"
+                ></TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/similarQuestionRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:gravity="right"-->
+<!--                android:textSize="18sp">-->
+
+<!--            </CheckBox>-->
+
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--            </RadioGroup>-->
+
+
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="right"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:textSize="18sp">-->
+
+<!--            </CheckBox>-->
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="right"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:textSize="18sp">-->
+<!--            </RadioGroup>-->
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="right"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:textSize="18sp">-->
+
+<!--            </CheckBox>-->
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--            </RadioGroup>-->
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="right"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:textSize="18sp">-->
+
+<!--            </CheckBox>-->
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="right"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:textSize="18sp">-->
+<!--            </RadioGroup>-->
+<!--            <CheckBox-->
+<!--                android:id="@+id/checkBox5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="right"-->
+<!--                android:layout_gravity="right"-->
+<!--                android:textSize="18sp">-->
+
+<!--            </CheckBox>-->
+<!--            <RadioGroup-->
+<!--                android:id="@+id/radioGroup5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+<!--            </RadioGroup>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/questionText"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/textTitle"-->
+
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:padding="10dp"/>-->
+
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/radioGroup"
+
+    >
+
+</RadioGroup>
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <Button-->
+<!--                    android:id="@+id/add_question_Button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/add_question" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/cancel_Button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/cancel" />-->
+<!--                ></LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

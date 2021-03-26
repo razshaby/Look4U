@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadeScrollbars="false"
+    android:verticalScrollbarPosition="right"
+    android:fillViewport="false"
+    android:layout_below="@+id/create_questionnaireTitle"
+    >
+<!--<RelativeLayout-->
+<!--    android:id="@+id/myRelativeLayout"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity"-->
+<!--    android:padding="10sp">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/mainTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="ברוכים הבאים לאפליקציית Look4U"-->
+<!--        android:textSize="25sp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:paddingTop="10sp"-->
+<!--        android:textColor="#2196F3"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/subTitle"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="בתפריט למעלה תוכלו לבחור בין מספר מסכים:"-->
+<!--        android:layout_below="@+id/mainTitle"-->
+<!--        android:paddingTop="10sp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="#6B1CDA"-->
+
+<!--        />-->
+
+
+<!--    <TextView-->
+<!--        android:layout_below="@+id/subTitle"-->
+
+<!--        android:id="@+id/presonalInformation"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="פרטים אישיים"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#211CDA"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_below="@+id/presonalInformation"-->
+<!--        android:textSize="14sp"-->
+
+<!--        android:id="@+id/presonalInformationDescription"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="במסך זה תוכלו לראות את פרטיכם האישיים, בכדי למלא ולחבר שאלונים תצטרכו תחילה למלא את המין ותאריך הלידה שלכם"-->
+<!--        />-->
+
+
+
+<!--    <TextView-->
+<!--        android:layout_below="@+id/presonalInformationDescription"-->
+
+<!--        android:id="@+id/fillQuestionnaire"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="מילוי שאלונים"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#211CDA"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_below="@+id/fillQuestionnaire"-->
+
+<!--        android:id="@+id/fillQuestionnaireDescription"-->
+<!--        android:textSize="14sp"-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="במסך זה תוכלו לבחור קטגוריה רצוי ולענות על שאלונים שמשתמשים אחרים חיברו"-->
+<!--        />-->
+
+
+
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:layout_below="@+id/fillQuestionnaireDescription"-->
+
+<!--        android:id="@+id/advertisingQuestionnaire"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="פרסום שאלונים"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#211CDA"        android:layout_marginTop="10sp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_below="@+id/advertisingQuestionnaire"-->
+
+<!--        android:id="@+id/advertisingQuestionnaireDescription"-->
+<!--        android:textSize="14sp"-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="במסך זה תוכלו לבחור קטגוריה קיימת או להוסיף קטגוריה משלכם, ולחבר שאלונים עליהם יוכלו לענות משתמשים המתאימים לפרטי הסינון שתבחרו"-->
+<!--        />-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <TextView-->
+<!--        android:layout_below="@+id/advertisingQuestionnaireDescription"-->
+
+<!--        android:id="@+id/matches"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="התאמות"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#211CDA"        android:layout_marginTop="10sp"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_below="@+id/matches"-->
+<!--        android:textSize="14sp"-->
+
+<!--        android:id="@+id/matchesDescription"-->
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="במסך זה תוכלו לראות מי ענה על השאלונים שחיברתם ומה אחוזי ההתאמה שלו - כלומר על כמה שאלות הוא ענה נכון"-->
+<!--        />-->
+
+
+
+
+
+
+
+
+
+
+
+    <!--Creating the menu grid button-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:padding="16dp"
+        android:layout_gravity="center"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:padding="16dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="12dp"
+                android:background="#fff"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/answerQuestionLinearLayout">
+
+                    <ImageView
+                        android:layout_width="110sp"
+                        android:layout_height="110sp"
+                        android:src="@drawable/answer"
+                       />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Filling_out_questionnaires"
+                        android:textSize="20sp"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="12dp"
+                android:background="#fff"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                   android:id="@+id/advertiseLinearLayout"
+                    >
+
+                    <ImageView
+                        android:layout_width="110sp"
+                        android:layout_height="110sp"
+                        android:src="@drawable/advertiser"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/create_questionnaires"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:padding="16dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="12dp"
+                android:background="#fff"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/chatsLinearLayout"
+                    >
+                    <ImageView
+                        android:layout_width="110sp"
+                        android:layout_height="110sp"
+                        android:src="@drawable/chats"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chats"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="12dp"
+                android:background="#fff"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:id="@+id/matchesLinearLayout"
+                    >
+
+                    <ImageView
+                        android:layout_width="110sp"
+                        android:layout_height="110sp"
+                        android:src="@drawable/matches" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/matches"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:weightSum="1"-->
+<!--            android:padding="16dp"-->
+<!--            >-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardElevation="2dp"-->
+<!--                app:cardCornerRadius="8dp"-->
+<!--                android:layout_margin="12dp"-->
+<!--                android:background="#fff"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center"-->
+<!--                    android:id="@+id/helpLinearLayout"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="110sp"-->
+<!--                        android:layout_height="110sp"-->
+<!--                        android:src="@drawable/help"-->
+
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/help"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </ScrollView>

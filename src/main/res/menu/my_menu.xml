@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/help"
+        android:title="@string/home"
+        android:icon="@drawable/logo_icon"
+        app:showAsAction="never"/>
+
+   <item android:id="@+id/personal_information"
+    android:title="@string/Personal_Information"
+       android:icon="@drawable/personal_info_icon"
+    app:showAsAction="never"/>
+
+
+    <item android:id="@+id/answering_questionnaires"
+        android:title="@string/fill_out_questionnaires"
+        android:icon="@drawable/answer_icon"
+        app:showAsAction="never"/>
+
+
+    <item android:id="@+id/advertising_Questionnaires"
+    android:title="@string/create_questionnaire"
+        android:icon="@drawable/advertiser_icon"
+    app:showAsAction="never"/>
+
+    <item android:id="@+id/matches"
+        android:icon="@drawable/matches_icon"
+        android:title="@string/matches"
+        app:showAsAction="never"/>
+
+
+
+
+ <item android:id="@+id/chats"
+     android:icon="@drawable/chats_icon"
+     android:title="@string/chats"
+     app:showAsAction="never"/>
+
+
+    <item android:id="@+id/logout"
+        android:title="@string/disconnect"
+        android:icon="@drawable/logout_icon"
+        app:showAsAction="never"/>
+</menu>

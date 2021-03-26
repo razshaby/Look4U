@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        >
+
+        <TextView
+            android:id="@+id/userName_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Main Title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20sp"/>
+
+        <ImageView
+            android:id="@+id/user_ImageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20sp"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone"
+            />
+        <com.github.ybq.android.spinkit.SpinKitView android:id="@+id/spinKit"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+                     app:SpinKit_Color="#B0FFC107"
+            android:layout_marginLeft="20sp"
+
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        </com.github.ybq.android.spinkit.SpinKitView>
+
+        <TextView
+            android:id="@+id/userDescription_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Title"
+            android:textColor="#a9a9a9"
+            android:textStyle="bold"
+            android:layout_marginLeft="20sp"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="מלא שאלון"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:id="@+id/fillQuestionnaireButtonn"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/candidates_matchesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#E68C06"
+        android:layout_marginTop="20sp"
+        android:textSize="15sp"
+        />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/candidates_contactTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:textColor="#A98EEB"-->
+<!--        android:layout_below="@+id/candidates_matchesTextView"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:textSize="15sp"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/candidates_contactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#E68C06"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/candidates_matchesTextView"
+        android:layout_marginTop="10sp"
+        android:textSize="15sp"
+        android:padding="3sp"
+        />
+
+
+
+/>
+
+
+</RelativeLayout>

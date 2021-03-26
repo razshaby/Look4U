@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadeScrollbars="false"
+    android:fillViewport="true"
+    android:scrollbarSize="20sp"
+    android:verticalScrollbarPosition="right">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/FillOutQuestionnaires_ShowMatches_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".FillOutQuestionnaires_ShowMatches">
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/pathForUserTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:padding="5sp"-->
+<!--            android:text="pathForUserTextView"-->
+<!--            android:textSize="15sp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/numOfResultsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0sp"
+                android:layout_alignParentRight="true"
+                android:padding="5sp"
+                android:textColor="#4F4F55"
+                android:textSize="20sp"
+                android:layout_weight="0.1"/>
+
+            <ListView
+
+                android:id="@+id/showQuestionnairesListView"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_below="@id/numOfResultsTextView"
+                android:alpha="0.9"
+                android:layout_weight="0.7"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.1">
+
+                        <TextView
+                            android:id="@+id/pathForUserTextView"
+                            android:layout_toLeftOf="@+id/back_Button"
+                            android:layout_marginRight="20sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_alignTop="@+id/back_Button"
+                            />
+                        <Button
+                            android:id="@+id/back_Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/back"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+
+                            android:background="#E68C06"
+                            android:layout_marginRight="10sp"
+                            android:textSize="30sp"
+                            android:textColor="#ffffff"
+                            android:layout_marginBottom="25sp"
+                            />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/userMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:layout_marginRight="40sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:paddingBottom="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/fillOutShowMatchesRL"/>
+
+<RelativeLayout
+    android:id="@+id/fillOutShowMatchesRL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+        <Button
+            android:id="@+id/changeCategoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/changeFilterDetailsButton"
+            android:background="#E68C06"
+            android:text="@string/Apply_in_another_category"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+android:layout_marginTop="30sp"
+            android:visibility="gone"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp"/>
+
+
+
+
+    <Button
+            android:id="@+id/changeFilterDetailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"            android:background="#E68C06"
+            android:text="@string/change_filter_advertiser_details"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+        android:visibility="gone"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+            />
+
+
+
+
+</RelativeLayout>
+
+        <include layout="@layout/spinkitview" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

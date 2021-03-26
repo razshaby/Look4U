@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/linearLayoutIDSimilarQuestion"
+    >
+    <!--    android:padding="16dp"-->
+
+    <TextView
+        android:id="@+id/TextViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="21sp"
+        android:textColor="#000000"
+
+        >
+
+    </TextView>
+
+
+
+    <RadioGroup
+        android:id="@+id/answers_RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewQuestion"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20sp">
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/removeImageView"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignTop="@+id/TextViewQuestion"
+        android:layout_marginRight="6sp"
+        android:layout_toLeftOf="@+id/TextViewQuestion"
+        android:src="@drawable/x"
+
+        />
+
+</RelativeLayout>

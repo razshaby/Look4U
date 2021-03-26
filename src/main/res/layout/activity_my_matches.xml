@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="fill_parent"-->
+<!--    android:scrollbarSize="20sp"-->
+<!--    android:fadeScrollbars="false"-->
+<!--    android:verticalScrollbarPosition="right"-->
+<!--    android:fillViewport="false"-->
+<!--    >-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_matches_RelativeLayout"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyMatchesActivity"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp">
+
+
+
+
+
+
+    <Button
+        android:id="@+id/showAllResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/View_the_rest_of_the_results"
+        android:background="#E68C06"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginLeft="10sp"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:paddingRight="5sp"
+        android:paddingLeft="5sp"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/myMatchesPathTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_above="@+id/candidates_backButton"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp"
+        />
+
+
+        <TextView
+            android:id="@+id/pathTextView"
+            android:layout_toLeftOf="@+id/back_Button"
+            android:layout_toRightOf="@+id/next_button"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            />
+        <include layout="@layout/spinkitview"/>
+
+<!--        <com.github.ybq.android.spinkit.SpinKitView-->
+<!--            android:layout_width="150sp"-->
+<!--            android:layout_height="150sp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:id="@+id/spinKit"-->
+<!--            style="@style/SpinKitView.Large.Circle"-->
+<!--            app:SpinKit_Color="#20E2DA"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="100sp"-->
+
+<!--            >-->
+
+<!--        </com.github.ybq.android.spinkit.SpinKitView>-->
+
+
+
+
+        <ListView
+            android:id="@+id/MyMatchesListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/myMatchesPathTextView"
+            android:alpha="0.9"
+            />
+    <Button
+        android:id="@+id/candidates_backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignParentRight="true"
+        android:background="#E68C06"
+        android:layout_marginRight="10sp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25sp"
+        android:enabled="false"
+        android:alpha="0"
+        />
+
+
+
+
+        <TextView
+            android:id="@+id/no_chats_foundTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F01616"
+            android:text="@string/Your_questionnaires_have_not_yet_been_answered"
+            android:textSize="30sp"
+            android:layout_marginTop="100sp"
+            android:visibility="gone"
+            />
+
+
+
+
+    </RelativeLayout>
+
+<!--</ScrollView>-->

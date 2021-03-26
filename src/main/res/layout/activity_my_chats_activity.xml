@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_Chats_RelativeLayout"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyChatsActivity"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp">
+
+
+    <com.github.ybq.android.spinkit.SpinKitView android:id="@+id/spinKit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerHorizontal="true"
+        app:SpinKit_Color="#B0FFC107"
+        android:layout_marginTop="30sp"
+        android:paddingBottom="30sp"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    </com.github.ybq.android.spinkit.SpinKitView>
+
+        <ListView
+            android:id="@+id/MyChats_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            />
+
+        <TextView
+            android:id="@+id/no_chats_foundTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F01616"
+            android:text="@string/noChatsExist"
+            android:textSize="30sp"
+            android:layout_marginTop="100sp"
+            android:visibility="gone"
+            />
+
+
+
+
+    </RelativeLayout>

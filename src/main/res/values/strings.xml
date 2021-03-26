@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Look4U</string>
+
+
+
+    <string name="WelcomwMessage">ברוכ/ה הבא/ה לLook4U </string>
+    <string name="WelcomwMessage1">התחבר/י דרך חשבון הפייסבוק</string>
+    <string name="next">המשך</string>
+    <string name="back">חזור</string>
+    <string name="Please_select_a_category_to_post_a_questionnaire">נא לבחור קטגוריה ליצרת השאלון:</string>
+    <string name="You_have_already_compiled_a_questionnaire_for_this_category">כבר חיברת שאלון לקטגוריה זו</string>
+    <string name="Personal_Information">פרטים אישיים</string>
+    <string name="Filling_out_questionnaires">מילוי שאלונים</string>
+    <string name="create_questionnaire">יצירת שאלון</string>
+
+    <string name="noChatsExist">עדיין לא קיימים צ\'אטים</string>
+    <string name="chats">צ\'אט</string>
+    <string name="advertiseQuestionnaire">יצירת שאלון</string>
+    <string name="Apply_in_another_category">שינוי קטגוריה</string>
+    <!--    <string name="textTitle">טקסט בפופ אם</string>-->
+    <!--    <string name="textButton">טקסט בכפתור</string>-->
+    <string name="Do_you_want_to_add_another_questionnaire">האם ברצונך ליצור שאלון נוסף?</string>
+    <string name="Are_you_sure_you_want_to_publish_the_questionnaire">האם את/ה בטוח/ה שברצונך ליצור את השאלון?</string>
+    <string name="no">לא</string>
+    <string name="male">זכר</string>
+    <string name="female">נקבה</string>
+    <string name="Irrelevant">לא רלוונטי</string>
+    <string name="Yes">כן</string>
+    <string name="Select_to_question_to_add_to_questionnaire">נמצאו השאלות הדומות הבאות, אם ברצונך להוסיף אותן יש לסמן וללחוץ אישור</string>
+    <string name="View_previous_results">הצג תוצאות קודמות</string>
+    <string name="View_the_rest_of_the_results">הצג את שאר התוצאות</string>
+    <string name="Next_question">שאלה הבאה</string>
+    <string name="Previous_question">שאלה קודמת</string>
+    <string name="Send_candidacy">שלח מועמדות</string>
+    <string name="Go_to_the_next_unanswered_question">עבור לשאלה הבאה שלא נענתה</string>
+    <string name="ok">אישור</string>
+    <string name="help">עזרה</string>
+    <string name="matches">התאמות</string>
+    <string name="create_questionnaires">יצירת שאלון</string>
+    <string name="chats_description">במסך זה תוכלו להתכתב עם משתמשים אשר סימנתם או סימנו אתכם התאמה.</string>
+    <string name="matches_description">במסך זה תוכלו לראות מי ענה על השאלונים שחיברתם ומה אחוזי ההתאמה שלו - כלומר אחוז השאלות הוא ענה נכונה.</string>
+    <string name="advertise_questionnaires_description">במסך זה תוכלו לבחור קטגוריה קיימת או להוסיף קטגוריה משלכם, ולחבר שאלונים עליהם יוכלו לענות משתמשים המתאימים לפרטי הסינון שתבחרו.</string>
+    <string name="fill_out_questionnaires">מילוי שאלונים</string>
+    <string name="fill_out_questionnaires_description">במסך זה תוכלו לבחור קטגוריה רצויה ולענות על שאלונים שמשתמשים אחרים חיברו.</string>
+    <string name="help_description">כדי לקבל פירוט על כל אחת מהאפשרויות יש ללחוץ לחיצה ארוכה.</string>
+    <string name="help_add_question">כדי להוסיף שאלות חדשות לשאלון שלכם יש להקליד שאלה, ולאחריה להקליד מינימום 2 תשובות (ניתן להוסיף תשובות בעזרת הפלוס).לבסוף יש לסמן את התשובה הנכונה עבורכם ולהקיש הוספת שאלה. אם ברצונכם להתחרט ולמחוק תשובה יש ללחוץ על פח שלידה.</string>
+
+    <string name="no_massages_yet_press_to_send">עדיין אין הודעות</string>
+    <string name="Your_questionnaires_have_not_yet_been_answered">שאלונייך טרם נענו</string>
+    <string name="home">מסך ראשי</string>
+    <string name="disconnect">התנתק</string>
+
+    <string name="choose_which_ages_can_answer_your_questionnaire">בחר/י אילו גילאים יוכלו להשיב על השאלון שלך:</string>
+    <string name="to">עד</string>
+    <string name="choose_the_gender_to_answer_the_questionnaire">בחר/י את המין שיוכל להשיב על השאלון:</string>
+    <string name="select_questions">בחירת שאלות מהמאגר</string>
+    <string name="add_new_questions">הוספת שאלות חדשות</string>
+    <string name="finish">סיום</string>
+    <string name="Type_an_answer">הקלד/י תשובה</string>
+    <string name="questionEditText">הקלד/י שאלה</string>
+    <string name="save_question">שמירת השאלה</string>
+    <string name="change_filter_advertiser_details">שינוי סינון פרטי מחבר השאלון</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center">
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginHorizontal="50sp">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+<!--            <DatePicker android:id="@+id/datePicker1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:datePickerMode="spinner"-->
+<!--                android:calendarViewShown="false"/>-->
+
+            <TextView
+                android:id="@+id/progress_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:textColor="#636367"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:textColor="#000000"
+                android:textSize="25sp"
+
+                />
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:layout_marginTop="20dp"
+                android:theme="@style/NumberPickerText"/>
+<Spinner
+    android:id="@+id/genderSpinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    />
+            <TextView
+                android:id="@+id/infoText"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+
+                />
+
+
+
+
+
+<!--            <Button-->
+<!--                android:id="@+id/ok_Button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/ok"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textSize="30sp"-->
+<!--                android:background="@drawable/btn_rounded"-->
+
+<!--                />-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ok_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E68C06"
+                android:text="@string/ok"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:theme="@style/Theme.MaterialComponents"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                />
+
+
+
+            >
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outerFillRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FillOutQuestionnairesChooseAdvertiserDetails">
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_rounded"
+        android:text="@string/back"
+        android:textSize="20sp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/chooseAdvertiserDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="סינון פרטי מחבר השאלון"
+        android:textColor="#E68C06"
+        android:textSize="20sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/fillOutChooseAdDetailsPathTextView"-->
+<!--        android:layout_marginRight="20sp"-->
+<!--        android:layout_marginLeft="20sp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="15sp"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        android:layout_marginBottom="50sp"-->
+<!--        android:text="path"-->
+<!--        android:layout_toRightOf="@+id/searchButton"-->
+<!--        android:layout_toLeftOf="@+id/back_Button"-->
+<!--        android:layout_alignTop="@+id/searchButton"-->
+<!--        />-->
+
+
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/next"
+        android:textSize="30sp"
+        android:background="#E68C06"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10sp"
+
+
+        />
+    <TextView
+        android:id="@+id/fillOutChooseAdDetailsPathTextView"
+        android:layout_toRightOf="@+id/searchButton"
+        android:layout_toLeftOf="@+id/back_Button"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/searchButton"
+        />
+    <Button
+        android:id="@+id/back_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+
+        android:background="#E68C06"
+        android:layout_marginRight="10sp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="25sp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/ageRangeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ChooseGenderTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:text="טווח גילאים:" />
+
+    <TextView
+        android:id="@+id/tillTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageRangeTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="40dp"
+        android:text="עד"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseAdvertiserDetailsTextView"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="30dp"
+       ></Spinner>
+
+    <TextView
+        android:id="@+id/ChooseGenderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/chooseAdvertiserDetailsTextView"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp"
+        android:text="מין:"></TextView>
+
+    <NumberPicker
+        android:id="@+id/numberPickerFrom"
+        android:layout_width="150dp"
+        android:layout_height="113dp"
+        android:layout_below="@+id/ageRangeTextView"
+        android:layout_toRightOf="@id/tillTextViewId"
+        android:paddingLeft="20dp"
+        android:theme="@style/NumberPickerText" />
+
+    <NumberPicker
+        android:id="@+id/numberPickerUntil"
+        android:layout_width="150dp"
+        android:layout_height="113dp"
+        android:layout_below="@+id/ageRangeTextView"
+        android:layout_toLeftOf="@id/tillTextViewId"
+        android:paddingRight="20dp"
+        android:theme="@style/NumberPickerText" />
+</RelativeLayout>

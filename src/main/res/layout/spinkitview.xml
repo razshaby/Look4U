@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.github.ybq.android.spinkit.SpinKitView android:id="@+id/spinKit"
+    style="@style/SpinKitView.Large.Circle"
+    android:layout_width="150sp"
+    android:layout_height="150sp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+
+    app:SpinKit_Color="#E68C06"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    </com.github.ybq.android.spinkit.SpinKitView>
+

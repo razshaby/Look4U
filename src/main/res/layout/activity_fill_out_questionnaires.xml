@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outerFillRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FillOutQuestionnairesActivity">
+
+
+    <TextView
+        android:id="@+id/chooseAdvertiserDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:text="בחירת קטגוריה"
+        android:textColor="#E68C06"
+        android:textSize="20sp" />
+
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView android:id="@+id/spinKit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerHorizontal="true"
+        app:SpinKit_Color="#B0FFC107"
+        android:layout_centerVertical="true"
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    </com.github.ybq.android.spinkit.SpinKitView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/backButton"
+        android:layout_below="@+id/chooseAdvertiserDetailsTextView"
+        android:layout_marginTop="-4dp"
+        android:layout_marginBottom="4dp"
+        android:alpha="0.9"
+        android:background="@null"
+        android:fadeScrollbars="false"
+        android:layoutDirection="rtl"
+
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="20dp"
+
+        android:scrollbarSize="5sp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="#E68C06"
+        android:textSize="30sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25sp"
+        android:layout_marginLeft="10sp"
+
+        android:textColor="#ffffff"
+
+        android:layout_alignParentBottom="true"
+
+        />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignParentRight="true"
+        android:background="#E68C06"
+        android:layout_marginRight="10sp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25sp"
+
+        />
+    <!--           -->
+
+    <TextView
+        android:id="@+id/fillOutPathTextView"
+        android:layout_toLeftOf="@+id/backButton"
+        android:layout_toRightOf="@+id/continueButton"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+android:layout_alignTop="@+id/backButton"
+        />
+
+
+
+</RelativeLayout>
